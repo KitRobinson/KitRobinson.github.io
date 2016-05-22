@@ -19,8 +19,12 @@ body {
 	border-image: url(border.png) 100 round;
 	background-color: grey;
 	color: white;
-
-
+}
+#deitylist {
+	background-image: url("starfieldlarge.jpg"), url("blackfill.bmp");
+	height: calc(100% - 75px);
+	background-size: 100%;
+	background-repeat: no-repeat, repeat;
 }
 nav {
 	position: fixed;
