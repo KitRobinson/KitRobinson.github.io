@@ -1,0 +1,73 @@
+html {
+	margin: 0;
+	padding: 0;
+}
+a + a {
+	margin-left: 10px;
+}
+a:visited {
+	color: LightBlue; 
+	}
+body {
+	position: absolute;
+	top: 0;
+	margin: 0;
+	padding: 0;
+	width: calc(100% - 50px);
+	padding-top: 25px;
+	border: 25px solid transparent;
+	border-image: url(border.png) 100 round;
+	background-color: grey;
+	color: white;
+}
+#deitylist {
+	background-image: url("starfieldlarge.jpg"), url("blackfill.bmp");
+	height: calc(100% - 75px);
+	background-size: 100%;
+	background-repeat: no-repeat, repeat;
+}
+nav.basic {
+	position: fixed;
+	background-color: black;
+	height: 25px;
+	width: calc(100% - 50px);
+	text-align: center;
+	font-size: 100%;
+	line-height:200%;
+	top: 0;
+	font-family: arial;
+	font-weight: bold;
+	color: white;
+}
+table {
+	position: relative;
+	width: 40%;
+	left: 30%;
+	text-align: center;
+	border: 1px solid black;
+}
+img.insert {
+	display:block;
+	max-height: 400px;
+	max-width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+@media screen and (max-width: 500px) {
+	body {
+		top: 50px;
+		width: auto;
+		border: 0px;
+		border-image: none;
+	}
+	nav.basic{
+		height: 75px;
+	}
+	table{
+		width: 80%;
+		left: 10%;
+		right: 10%;
+	}
+}
