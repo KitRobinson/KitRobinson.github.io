@@ -5,6 +5,9 @@ html {
 a + a {
 	margin-left: 10px;
 }
+a:visited {
+	color: LightBlue; 
+	}
 body {
 	position: absolute;
 	top: 0;
@@ -12,10 +15,7 @@ body {
 	padding: 0;
 	width: calc(100% - 50px);
 	padding-top: 25px;
-	border-left: 25px solid transparent;
-	border-right: 25px solid transparent;
-	border-bottom: 25px solid transparent;
-	border-top:25px solid transparent;
+	border: 25px solid transparent;
 	border-image: url(border.png) 100 round;
 	background-color: grey;
 	color: white;
@@ -26,7 +26,7 @@ body {
 	background-size: 100%;
 	background-repeat: no-repeat, repeat;
 }
-nav {
+nav.basic {
 	position: fixed;
 	background-color: black;
 	height: 25px;
@@ -55,3 +55,19 @@ img.insert {
 
 }
 
+@media screen and (max-width: 500px) {
+	body {
+		top: 50px;
+		width: auto;
+		border: 0px;
+		border-image: none;
+	}
+	nav.basic{
+		height: 75px;
+	}
+	table{
+		width: 80%;
+		left: 10%;
+		right: 10%;
+	}
+}
